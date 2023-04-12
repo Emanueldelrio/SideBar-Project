@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*global variables*/
+:root{
+    --background-color:#99ebff;
+    --background-hover:#f2f2f2;
+}
+
+/*global aside*/
+.aside{
+    height: 100vh;
+    background-color:var(--background-color) ;
+    width: 350px;
+    position: fixed;
+    padding: 12px;
+    transition: all .4s ease;
+}
+
+
+/*head*/
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.head i{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.profile p{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.profile p::first-letter{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+/*options icons*/
+
+.options div{
+    
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    padding: 7px;
+    margin-bottom: 15px;
+}
+
+.options div:hover{
+    background-color: var(--background-hover) ;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.options i{
+    font-size: 28px;
+}
+
+.options .option{
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+/*aside modification*/
+.aside.active{
+    width: 70px;
+    transition: all .4s ease;
+}
+
+.aside.active .option,
+aside.active .profile{
+    display: none;
+}
+
+
+aside.active .head i{
+    margin: 10px auto;
+    font-size: 32px;
+}
+
+
+
+
+
+
